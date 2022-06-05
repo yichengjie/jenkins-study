@@ -1,3 +1,4 @@
+#!/bin/sh
 BUILD_ID=DONTKILLME
 . /etc/profile
 # 配置运行参数
