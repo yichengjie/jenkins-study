@@ -24,9 +24,12 @@ killTomcat
 # 删除原有工程
 rm -f $TOMCAT_APP_PATH/webapps/jenkins-study-*.jar
 
+# 如果目录不存在则创建
+mkdir -p /usr/local/tomcat/webapps
+
 # 复制新的工程
 cp $PROJ_PATH/jenkins-study/target/jenkins-study-1.0-SNAPSHOT.jar $TOMCAT_APP_PATH/webapps/
 
 cd $TOMCAT_APP_PATH/webapps/
 
-sh java -jar jenkins-study-1.0-SNAPSHOT.jar
+java -jar jenkins-study-1.0-SNAPSHOT.jar
