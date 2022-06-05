@@ -32,4 +32,4 @@ cp $PROJ_PATH/jenkins-study/target/jenkins-study-1.0-SNAPSHOT.jar $TOMCAT_APP_PA
 
 cd $TOMCAT_APP_PATH/webapps/
 
-nohub java -jar jenkins-study-1.0-SNAPSHOT.jar &
+nohup java -jar jenkins-study-1.0-SNAPSHOT.jar &
